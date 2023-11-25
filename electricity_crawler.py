@@ -90,7 +90,7 @@ if response.status_code == 200:
                     "time": datetime.now(),
                     "fields": {
                         "time_slot": object[1],
-                        "price_value": round(float(object[2].replace(",", ".")), 2) + 0.45
+                        "price_value": round(float(object[2].replace(",", ".").replace("−", "-")), 2) + 0.45
                     }
                 }
             ]
